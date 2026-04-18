@@ -1,0 +1,19 @@
+{
+  "name": "voice-qa-agent",
+  "version": "1.0.0",
+  "description": "Voice-powered Q&A Agent using Anthropic API and Web Speech API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.1",
+    "@google/genai": "^1.50.1",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^6.34.0",
+    "pdf-parse": "^1.1.1"
+  }
+}

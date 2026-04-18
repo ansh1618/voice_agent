@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Q&A Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Voice Q&A Agent <span class="badge">RAG + TTS</span></h1>
+    </div>
+
+    <div class="pipeline">
+        <div class="step-container">
+            <div class="step-circle" id="circle-1">1</div>
+            <div class="step-label" id="label-1">Voice<br>Input</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-container">
+            <div class="step-circle" id="circle-2">2</div>
+            <div class="step-label" id="label-2">Speech<br>Recog</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-container">
+            <div class="step-circle" id="circle-3">3</div>
+            <div class="step-label" id="label-3">RAG<br>Agent</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-container">
+            <div class="step-circle" id="circle-4">4</div>
+            <div class="step-label" id="label-4">Text -<br>To-Speech</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-container">
+            <div class="step-circle" id="circle-5">5</div>
+            <div class="step-label" id="label-5">Spoken<br>Answer</div>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-title">STEP 1 — UPLOAD PDF DOCUMENT</div>
+        <div class="upload-zone" id="upload-zone">
+            <div class="upload-icon">📄</div>
+            <span id="upload-text">Click to upload a PDF</span>
+            <input type="file" id="file-upload" accept="application/pdf">
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-title">STEP 2 — ASK YOUR QUESTION BY VOICE</div>
+        <div class="voice-zone">
+            <button class="mic-btn" id="mic-btn">🎙️</button>
+            <div class="status-display" id="status-text">upload a pdf to begin</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
